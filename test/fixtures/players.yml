@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fname: MyString
+  lname: MyString
+  hall_of_fame: false
+
+two:
+  fname: MyString
+  lname: MyString
+  hall_of_fame: false
