@@ -36,6 +36,8 @@
   * controllers
     * api
       * v1
+9. Add `gem resonders` to Gemfile.
+10. `bundle install`
 9. Create the **players_controller.rb** in the v1 directory:
   ```ruby
   module Api
