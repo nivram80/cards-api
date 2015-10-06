@@ -36,7 +36,7 @@
   * controllers
     * api
       * v1
-9. Add `gem resonders` to Gemfile.
+9. Add `gem resonders` to Gemfile so we can have access to the respond_to and respond_with controller methods.
 10. `bundle install`
 9. Create the **players_controller.rb** in the v1 directory:
   ```ruby
