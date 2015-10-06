@@ -93,6 +93,22 @@
   end
   ```
 10. Create API access token model: `rails g model api_key access_token`
+11. Add a generate_access_token method to the api_key model:
+	```ruby
+	class ApiKey < ActiveRecord::Base
+
+		before_create :generate_access_token
+
+		private
+
+		def generate_access_token
+		  begin
+		    self.access_token = SecureRandom.hex
+		  end while self.class.exists?(access_token: access_token)
+		end
+	
+	end
+	```
 11. `rake db:migrate`
 10. Run Rails console: `rails console`
 12. Create API access token: `ApiKey.create!`
